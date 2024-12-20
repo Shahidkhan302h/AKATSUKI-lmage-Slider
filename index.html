@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/konha.webp" alt="1" />
+          <h1>CONAN</h1>
+          <div class="details">
+            <h2></h2>
+            <p>___________Paper Master</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/pain.jpg" alt="2" />
+          <h1>PAIN</h1>
+          <div class="details">
+            <h2></h2>
+            <p>Nagato Uzumaki</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/obito.jpeg" alt="3" />
+          <h1>OBITO</h1>
+          <div class="details">
+            <h2></h2>
+            <p>Hacker Uchiha</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Images/itachi.jpg" alt="4" />
+          <h1>ITACHI</h1>
+          <div class="details">
+            <h2></h2>
+            <p>King Of Genjutsu </p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/hidan.jpg" alt="5" />
+          <h1>HIDAN</h1>
+          <div class="details">
+            <h2></h2>
+            <p>The Member Of Akatsuki </p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/Kisame.webp" alt="6" />
+          <h1>KISAME</h1>
+          <div class="details">
+            <h2></h2>
+            <p>Bina tail Ke tail beast </p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/SASOR.jpeg" alt="7" />
+          <h1>SASORI</h1>
+          <div class="details">
+            <h2></h2>
+            <p>The Papet Master</p>
+          </div>
+        </div>
+      
+      
+      </div>
+
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
